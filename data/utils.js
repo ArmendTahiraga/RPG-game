@@ -11,6 +11,9 @@ function getDiceNumbers(diceCount) {
 		return Math.floor(Math.random() * 6) + 1;
 	});
 }
-const getPercentage = (remainingHealth, maximumHealth) => (100 * remainingHealth) / maximumHealth;
+
+function getPercentage(remainingHealth, maximumHealth) {
+	return (100 * remainingHealth) / maximumHealth;
+}
 
 export { getPlaceholderDiceHtml, getDiceNumbers, getPercentage };
